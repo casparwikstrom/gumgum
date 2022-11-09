@@ -9,6 +9,7 @@ import { BuilderComponent, builder, useIsPreviewing, Builder } from '@builder.io
 // Find the API Key on: https://builder.io/account/settings
 builder.init('c50753547e70483596b8537d33c7a6c3');
 
+
 export async function getStaticProps({ params }) {
   // Fetch the first page from Builder that matches the current URL.
   // Use the `userAttributes` field for targeting content.
