@@ -5,6 +5,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+.video_container {
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
+}
 
 a {
   color: inherit;
@@ -12,6 +17,7 @@ a {
 }
 
 * {
+  border:1px solid rgb(232, 13, 13);
   box-sizing: border-box;
 }
 
@@ -21,6 +27,6 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: white;
   }
 }
