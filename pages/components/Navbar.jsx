@@ -1,61 +1,36 @@
-// export react Navbar component
-// export default Navbar
-// 
-// 
-// export default function Home() {
-//   return (
-//       <div>
-//         <div>
-//         <video src={require('../public/testett.mp4')} autoPlay loop muted className='video_container'/>
-//         
-//         
-//         </div>
-//         <div className='video_overlay'>
-//             <div className='video_overlay_content'>
-//                 <h1>Next.js Video Background</h1>
-//                 <p>Background video with Next.js and CSS</p>
-//             </div>
-//         </div>
-//         <style jsx>{`
-//             .video_container {
-//                 width: 100%;
-//                 height: 100vh;
-//                 object-fit: cover;
-//                 position: absolute;
-//                 top: 0;
-//                 left: 0;
-//                 z-index: -1;
-//             }
-//             .video_overlay {
-//                 width: 100%;
-//                 height: 100vh;
-//                 position: absolute;
-//                 top: 0;
-//                 left: 0;
-//                 background-color: rgba(0,0,0,0.5);
-//             }
-//             .video_overlay_content {
-//                 width: 100%;
-//                 height: 100%;
-//                 display: flex;
-//                 flex-direction: column;
-//                 justify-content: center;
-//                 align-items: center;
-//                 color: white;
-//                 text-align: center;
-//             }
-//         `}</style>
-//       <Navbar>
-// 
-//       </Navbar>
-// 
-//       </div>
-// 
-//     
-//     
-//     )
-// }
-// 
-// 
-// export react Navbar component
-//
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import BasicMenu from './Dropdown';
+
+
+export default function Navbar() {
+    return (
+        
+        <Box sx={{ flexGrow: 1, }}>
+            <AppBar className="navbar_top">
+                <Toolbar>
+                    <IconButton
+                        size="large"
+                        edge="start"
+                        color="inherit"
+                        aria-label="menu"
+                        sx={{ mr: 2 }}
+                    >
+                        <MenuIcon />
+                    </IconButton>
+
+                    <BasicMenu sticky="top">
+
+                    </BasicMenu>
+
+                </Toolbar>
+            </AppBar>
+        </Box>
+    );
+}
