@@ -1,3 +1,10 @@
+
+
+.color1 {color: #F38181;}
+.color2 {color: #FCE38A;}
+.color3 {color: #EAFFD0;}
+.color4 {color: #95E1D3;}
+
 html,
 body {
   padding: 0;
@@ -44,4 +51,16 @@ a {
 /* navbar */
 .navbar_top {
   z-index: 100;
+}
+
+.links {
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+/* BOX */
+.box{
+  display: flex;
+  justify-content: space-evenly;
 }
