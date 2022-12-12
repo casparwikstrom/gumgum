@@ -3,8 +3,10 @@ import Container from '@mui/material/Container';
 import Video from './components/Video';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
+import Footer from './components/Footer';
+
 export default function Home() {
-    return (
+    return (<>
         <div className="min_height">
 
 
@@ -38,17 +40,13 @@ export default function Home() {
 
 
             </div>
-
-
-
-
-
-
-
+            {/* Start footer */}
 
         </div>
+        <Footer></Footer>
 
 
+    </>
     )
 }
 
