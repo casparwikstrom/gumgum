@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
 
         <Box sx={{ flexGrow: 1, }}>
-            <AppBar className="navbar_top">
+            <AppBar className="navbar_top lgreen">
                 <Toolbar>
                     
                     <div className='links'>
@@ -17,10 +17,6 @@ export default function Navbar() {
                         <Link href="/">dsadasd</Link>
                         <Link href="/">Contact</Link>
                     </div>
-
-                
-
-
 
                 </Toolbar>
             </AppBar>

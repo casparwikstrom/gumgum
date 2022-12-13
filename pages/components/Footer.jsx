@@ -20,6 +20,7 @@ export default function Footer() {
         {/* Footer */}
         <Box
           component="footer"
+          className='lgreen footer-box'
           sx={{
             py: 3,
             px: 2,
@@ -27,10 +28,6 @@ export default function Footer() {
             minHeight: '25rem',
             display: 'flex',
             justifyContent: 'center',
-            backgroundColor: (theme) =>
-              theme.palette.mode === 'light'
-                ? theme.palette.grey[200]
-                : theme.palette.grey[800],
           }}
         >
           <Container sx={{ display: "flex" }}>
