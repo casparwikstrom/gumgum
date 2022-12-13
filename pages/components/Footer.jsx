@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Container from '@mui/material/Container';
 
 const theme = createTheme();
 
@@ -14,7 +15,6 @@ export default function Footer() {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          minHeight: '100vh',
         }}
       >
         {/* Footer */}
@@ -24,28 +24,47 @@ export default function Footer() {
             py: 3,
             px: 2,
             mt: 'auto',
+            minHeight: '25rem',
+            display: 'flex',
+            justifyContent: 'center',
             backgroundColor: (theme) =>
               theme.palette.mode === 'light'
                 ? theme.palette.grey[200]
                 : theme.palette.grey[800],
           }}
         >
-          <Typography variant="body1">
-            <Link color="inherit" href="https://material-ui.com/">
-              Material-UI
-            </Link>{' '}
-            <Link color="inherit" href="https://material-ui.com/">
-              Material-UI
-            </Link>{' '}
-            with Next.js
-          </Typography>
-          <Typography variant="body2" color="text.secondary" align="center">
+          <Container sx={{ display: "flex" }}>
+
+            <div className="col-sm-4 links-footer">
+              <Link color="inherit" href="https://material-ui.com/">
+                Material-UI
+              </Link>
+            </div>
+
+            <div className="col-sm-4 links-footer">
+              <Link color="inherit" href="https://material-ui.com/">
+                Material-UI
+              </Link>
+            </div>
+
+            <div className="col-sm-4 links-footer">
+              <Link color="inherit" href="https://material-ui.com/">
+                Material-UI
+              </Link>
+            </div>
+
+
+          </Container>
+
+
+          
+        </Box>
+
+        <Typography variant="body2" color="text.secondary" align="center">
             {'© '}
             {new Date().getFullYear()}
             {'.'}
-
           </Typography>
-        </Box>
         {/* End footer */}
       </Box>
     </ThemeProvider>

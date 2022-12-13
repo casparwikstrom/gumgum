@@ -4,19 +4,19 @@ import Video from './components/Video';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Footer from './components/Footer';
+import Divider from '@mui/material/Divider';
+
 
 export default function Home() {
     return (<>
         <div className="min_height">
 
-
             <Navbar />
 
             <Video />
             {/* padding for not overlapping video */}
+            <Divider />
             <div className='container_bot'>
-
-
                 <Box
                     className="box"
                     sx={{
@@ -30,20 +30,41 @@ export default function Home() {
                         },
                     }}
                 >
-                    <Paper elevation={0} />
-                    <Paper sx={{ backgroundColor: ".color1" }} />
-                    <Paper elevation={3} />
+                    <Paper elevation={3} sx={{ backgroundColor: "black" }} />
+                    <Paper elevation={3} sx={{ backgroundColor: "black" }} />
+                    <Paper elevation={3} sx={{ backgroundColor: "black" }} />
                 </Box>
 
+                <Divider light />
+
+                <Box className="box-medium">
+                    <div className="col-sm-6 one-fourth"></div>
+                    <div className="col-sm-6 one-fourth"></div>
+                </Box>
+
+                <Divider />
+
+                <Box className="box-medium">
+                    <div className="col-sm-6 one-fourth"></div>
+                    <div className="col-sm-6 one-fourth"></div>
+                </Box>
+
+                <Divider />
+                
 
 
+                <Container>
+                    <div className="col-sm-12 one-fourth"></div>
+                    <Divider />
 
+                    <div className="col-sm-12 one-fourth"></div>
+                </Container>
 
             </div>
             {/* Start footer */}
 
         </div>
-        <Footer></Footer>
+        <Footer/>
 
 
     </>

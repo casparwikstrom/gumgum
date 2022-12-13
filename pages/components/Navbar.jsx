@@ -11,15 +11,7 @@ export default function Navbar() {
         <Box sx={{ flexGrow: 1, }}>
             <AppBar className="navbar_top">
                 <Toolbar>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="menu"
-                        sx={{ mr: 2 }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
+                    
                     <div className='links'>
                         <Link href="/">About</Link>
                         <Link href="/">dsadasd</Link>

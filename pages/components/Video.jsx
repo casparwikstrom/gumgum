@@ -3,7 +3,7 @@
 export default function Video() {
 
   return (
-    <div>
+    <>
       <div>
         <video src={require("../../public/testett.mp4")} autoPlay loop muted className='video_container' />
       </div>
@@ -14,11 +14,10 @@ export default function Video() {
         </div>
       </div>
 
-
       <style jsx>{`
             .video_container {
                 width: 100%;
-                height: 100%;
+                height: 90vh;
                 object-fit: cover;
                 position: absolute;
                 top: 0;
@@ -27,7 +26,7 @@ export default function Video() {
             }
             .video_overlay {
                 width: 100%;
-                height: 100vh;
+                height: 90vh;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -44,6 +43,6 @@ export default function Video() {
                 text-align: center;
             }
         `}</style>
-    </div>
+    </>
   )
 }

@@ -1,9 +1,14 @@
 import '../styles/globals.css'
 import Head from 'next/head'
 import Script from 'next/script';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
+
 function MyApp({ Component, pageProps }) {
-
-
+  
   return (
     <>
     <Head>

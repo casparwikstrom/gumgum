@@ -18,9 +18,9 @@ body {
   object-fit: cover;
 }
 
-.min_height {
+/* .min_height {
   min-height: 1000vh;
-}
+} */
 
 a {
   color: inherit;
@@ -42,11 +42,8 @@ a {
   }
 } */
 .container_bot {
-  margin-top: 100vh;
+  margin-top: 90vh;
 }
-
-
-
 
 /* navbar */
 .navbar_top {
@@ -58,9 +55,23 @@ a {
   justify-content: space-evenly;
   display: flex;
 }
+.links-footer {
+  
+  display: flex;
+  justify-content: center
+
+}
 
 /* BOX */
 .box{
   display: flex;
   justify-content: space-evenly;
 }
+.box-medium{
+  display: flex;
+}
+
+.one-fourth {
+  min-height: 25em;
+}
+
