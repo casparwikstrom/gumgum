@@ -6,7 +6,8 @@ import Box from '@mui/material/Box';
 import Footer from './components/Footer';
 import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
 import AddBusinessTwoToneIcon from '@mui/icons-material/AddBusinessTwoTone';
-
+import MarkAsUnreadIcon from '@mui/icons-material/MarkAsUnread';
+import Button from '@mui/material/Button';
 
 export default function Home() {
 
@@ -23,6 +24,7 @@ export default function Home() {
                 <div className='container_bot'>
                     <Box
                         className="box"
+                        id="aboutus"
                         sx={{
                             mb: 1,
                             display: 'flex',
@@ -59,7 +61,7 @@ export default function Home() {
                         <div className="col-sm-6 one-fourth"></div>
                     </Box>
  */}
-                    <div className="yellow col-sm-12 one-fourth" id="aboutus">
+                    <div className="yellow col-sm-12 one-fourth">
 
                         <Container sx={{
                             display: "flex",
@@ -81,19 +83,28 @@ export default function Home() {
                             alignItems: "center",
                             minHeight: "50vh",
                         }}>
-                            <form action="https://formsubmit.co/vantage2020@gmail.com" method="POST">
-                                <input type="text" name="name" required />
-                                <input type="email" name="email" required />
-                                <button type="submit">Send</button>
-                            </form>
+                            <Paper className="form-paper" elevation={3}>
+                                <h3>
+                                    <MarkAsUnreadIcon fontSize='large' />Get in touch
+                                </h3>
+                                <form action="https://formsubmit.co/vantage2020@gmail.com" method="POST" className='form'>
+                                    <input className="form-field" placeholder='Name' type="text" name="name" required />
+                                    <br />
+                                    <input className="form-field" placeholder='Email' type="email" name="email" required />
+                                    <br />
+                                    <input className="form-field text" placeholder='Text' type="text" name="name" required />
+
+                                    <br />
+
+                                    <Button className="green form-button" type="submit">Send</Button>
+                                </form>
+                            </Paper>
+
                         </Container>
                     </div>
 
                 </div>
                 {/* Start footer */}
-
-
-
 
             </div>
             <Footer />

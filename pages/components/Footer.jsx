@@ -42,7 +42,7 @@ export default function Footer() {
 
             <div className="col-sm-6 links-footer">
               <Link color="inherit" href="#contact">
-                Material-UI
+                Contact
               </Link>
             </div>
 
