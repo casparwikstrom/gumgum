@@ -87,7 +87,7 @@ export default function Home() {
                                 <h3>
                                     <MarkAsUnreadIcon fontSize='large' />Get in touch
                                 </h3>
-                                <form action="https://formsubmit.co/vantage2020@gmail.com" method="POST" className='form'>
+                                <form action="https://formsubmit.co/vantagemedia2020@gmail.com" method="POST" className='form'>
                                     <input className="form-field" placeholder='Name' type="text" name="name" required />
                                     <br />
                                     <input className="form-field" placeholder='Email' type="email" name="email" required />
