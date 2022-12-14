@@ -1,21 +1,20 @@
 
-
 .red {
-  background-color: #FF6363
+  background-color: #FF6363 !important;
 }
 .orange {
-  background-color: #FFAB76;
+  background-color: #FFAB76 !important;
   color: rgb(15, 15, 15);
 }
 .yellow {
-  background-color: #F6FFA4
+  background-color: #F6FFA4 !important;
 }
 .lgreen {
-  background-color: #95E1D3;
+  background-color: #95E1D3 !important;
   color: #102742
 }
 .green {
-  background-color: #00C897;
+  background-color: #00C897 !important;
   color: #102742;
 }
 
