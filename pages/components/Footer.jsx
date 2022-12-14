@@ -34,24 +34,17 @@ export default function Footer() {
         >
           <Container sx={{ display: "flex" }}>
           
-            <div className="col-sm-4 links-footer">
-              <Link color="inherit" href="https://material-ui.com/">
-                Material-UI
+            <div className="col-sm-6 links-footer">
+              <Link color="inherit" href="#about">
+                About us
               </Link>
             </div>
 
-            <div className="col-sm-4 links-footer">
-              <Link color="inherit" href="https://material-ui.com/">
+            <div className="col-sm-6 links-footer">
+              <Link color="inherit" href="#contact">
                 Material-UI
               </Link>
             </div>
-
-            <div className="col-sm-4 links-footer">
-              <Link color="inherit" href="https://material-ui.com/">
-                Material-UI
-              </Link>
-            </div>
-
 
           </Container>
 
@@ -64,8 +57,6 @@ export default function Footer() {
             {'© '}
             Copyright Zmarta invest. All Rights Reserved.
             {'.'}
-
-            
         </Typography>
        
     </ThemeProvider>

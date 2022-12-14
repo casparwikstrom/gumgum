@@ -4,6 +4,9 @@ import Video from './components/Video';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Footer from './components/Footer';
+import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
+import AddBusinessTwoToneIcon from '@mui/icons-material/AddBusinessTwoTone';
+
 
 export default function Home() {
 
@@ -32,33 +35,31 @@ export default function Home() {
                         }}
                     >
                         <Paper elevation={3} className="lgreen" sx={{ padding: "2%" }} >
-                            <p>sdasdasd</p>
+
+                            <PeopleOutlineIcon fontSize="large" />
+                            <p>Zmarta invest is a group of companies that, together with the management of each group company, develops long-term e-commerce and service companies based in Sweden.</p>
                         </Paper>
                         <Paper elevation={3} className="lgreen" sx={{ padding: "2%" }} >
-                            <p>sdasdasd</p>
+
+                            <AddBusinessTwoToneIcon fontSize='large'></AddBusinessTwoToneIcon>
+                            <p>We invest in quality small and medium-sized companies, which are generally very focused in a niche, in industries and with business models that we can understand, and where we can be a relevant owner.</p>
                         </Paper>
-                        <Paper elevation={3} className="lgreen" sx={{ padding: "2%" }} >
+                        {/* <Paper elevation={3} className="lgreen" sx={{ padding: "2%" }} >
                             <p>sdasdasd</p>
-                        </Paper>
+                        </Paper> */}
                     </Box>
 
-
-
-                    <Box className="box-medium">
+                    {/* <Box className="box-medium">
                         <div className="col-sm-6 one-fourth"></div>
                         <div className="orange col-sm-6 one-fourth"></div>
                     </Box>
-
-
 
                     <Box className="box-medium">
                         <div className="yellow col-sm-6 one-fourth"></div>
                         <div className="col-sm-6 one-fourth"></div>
                     </Box>
-
-
-
-                    <div className="lgreen col-sm-12 one-fourth" id="aboutus">
+ */}
+                    <div className="yellow col-sm-12 one-fourth" id="aboutus">
 
                         <Container sx={{
                             display: "flex",
@@ -67,23 +68,24 @@ export default function Home() {
                             minHeight: "50vh",
                         }}>
                             <p>
-                                LOREM
+                                Zmart invest is an e-commerce brand that combines high-performance products and high-quality results.
                             </p>
                         </Container>
                     </div>
 
                     <div className="col-sm-12 one-fourth" id="contact">
 
-
                         <Container sx={{
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
                             minHeight: "50vh",
                         }}>
-                            <p>
-                                LOREM
-                            </p>
+                            <form action="https://formsubmit.co/vantage2020@gmail.com" method="POST">
+                                <input type="text" name="name" required />
+                                <input type="email" name="email" required />
+                                <button type="submit">Send</button>
+                            </form>
                         </Container>
                     </div>
 
@@ -91,61 +93,6 @@ export default function Home() {
                 {/* Start footer */}
 
 
-
-                {/* <div class="formbold-main-wrapper">
-
-                    <div class="formbold-form-wrapper">
-                        <form action="https://formbold.com/s/FORM_ID" method="POST">
-                            <div class="formbold-mb-5">
-                                <label for="name" class="formbold-form-label"> Full Name </label>
-                                <input
-                                    type="text"
-                                    name="name"
-                                    id="name"
-                                    placeholder="Full Name"
-                                    class="formbold-form-input"
-                                />
-                            </div>
-
-                            <div class="formbold-mb-5">
-                                <label for="email" class="formbold-form-label"> Email Address </label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    placeholder="Enter your email"
-                                    class="formbold-form-input"
-                                />
-                            </div>
-
-                            <div class="formbold-mb-5">
-                                <label for="subject" class="formbold-form-label"> Subject </label>
-                                <input
-                                    type="text"
-                                    name="subject"
-                                    id="subject"
-                                    placeholder="Enter your subject"
-                                    class="formbold-form-input"
-                                />
-                            </div>
-
-                            <div class="formbold-mb-5">
-                                <label for="message" class="formbold-form-label"> Message </label>
-                                <textarea
-                                    rows="6"
-                                    name="message"
-                                    id="message"
-                                    placeholder="Type your message"
-                                    class="formbold-form-input"
-                                ></textarea>
-                            </div>
-
-                            <div>
-                                <button class="formbold-btn">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-                </div> */}
 
 
             </div>

@@ -4,13 +4,15 @@
   background-color: #FF6363
 }
 .orange {
-  background-color: #FFAB76
+  background-color: #FFAB76;
+  color: rgb(15, 15, 15);
 }
 .yellow {
   background-color: #F6FFA4
 }
 .lgreen {
-  background-color: #95E1D3
+  background-color: #95E1D3;
+  color: #102742
 }
 .green {
   background-color: #00C897
@@ -35,6 +37,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Roboto, sans-serif;
+  line-height: 169%;
 }
 .video_container {
   width: 100%;
@@ -91,9 +94,11 @@ a {
   justify-content: space-evenly;
   min-height: 30rem;
   align-items: center;
+
 }
 .box-medium{
   display: flex;
+  align-items: center;
 }
 
 .one-fourth {
