@@ -4,6 +4,7 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from "next/link";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 export default function Navbar() {
     return (
@@ -11,11 +12,13 @@ export default function Navbar() {
         <Box sx={{ flexGrow: 1, }}>
             <AppBar className="navbar_top lgreen">
                 <Toolbar>
-                    
+
                     <div className='links'>
-                        <Link href="/">About</Link>
-                        <Link href="/">dsadasd</Link>
-                        <Link href="/">Contact</Link>
+                        <Link href="#aboutus">About Us<ArrowDropDownIcon /></Link>
+
+                        {/* <Link href="/">dsadasd</Link> */}
+                        <Link href="/#contact">Contact<ArrowDropDownIcon /></Link>
+
                     </div>
 
                 </Toolbar>

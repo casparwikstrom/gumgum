@@ -6,6 +6,8 @@ import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 
+
+
 const theme = createTheme();
 
 export default function Footer() {
@@ -31,7 +33,7 @@ export default function Footer() {
           }}
         >
           <Container sx={{ display: "flex" }}>
-
+          
             <div className="col-sm-4 links-footer">
               <Link color="inherit" href="https://material-ui.com/">
                 Material-UI
@@ -54,16 +56,18 @@ export default function Footer() {
           </Container>
 
 
-          
+  
         </Box>
 
-        <Typography variant="body2" color="text.secondary" align="center">
-            {'© '}
-            {new Date().getFullYear()}
-            {'.'}
-          </Typography>
-        {/* End footer */}
       </Box>
+        <Typography variant="body2" color="text.secondary" align="center" className='orange'>
+            {'© '}
+            Copyright Zmarta invest. All Rights Reserved.
+            {'.'}
+
+            
+        </Typography>
+       
     </ThemeProvider>
   )
 }

@@ -4,9 +4,9 @@ import Video from './components/Video';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Footer from './components/Footer';
-import Divider from '@mui/material/Divider';
 
 export default function Home() {
+
     return (
         <>
             <div className="min_height">
@@ -16,7 +16,7 @@ export default function Home() {
 
                 <Video />
                 {/* padding for not overlapping video */}
-                <Divider />
+
                 <div className='container_bot'>
                     <Box
                         className="box"
@@ -31,28 +31,35 @@ export default function Home() {
                             },
                         }}
                     >
-                        <Paper elevation={3} className="lgreen" sx={{ backgroundColor: "lgreen" }} />
-                        <Paper elevation={3} className="lgreen" sx={{ backgroundColor: "lgreen" }} />
-                        <Paper elevation={3} className="lgreen" sx={{ backgroundColor: "green" }} />
+                        <Paper elevation={3} className="lgreen" sx={{ padding: "2%" }} >
+                            <p>sdasdasd</p>
+                        </Paper>
+                        <Paper elevation={3} className="lgreen" sx={{ padding: "2%" }} >
+                            <p>sdasdasd</p>
+                        </Paper>
+                        <Paper elevation={3} className="lgreen" sx={{ padding: "2%" }} >
+                            <p>sdasdasd</p>
+                        </Paper>
                     </Box>
 
-                    <Divider light />
+
 
                     <Box className="box-medium">
                         <div className="col-sm-6 one-fourth"></div>
                         <div className="orange col-sm-6 one-fourth"></div>
                     </Box>
 
-                    <Divider />
+
 
                     <Box className="box-medium">
                         <div className="yellow col-sm-6 one-fourth"></div>
                         <div className="col-sm-6 one-fourth"></div>
                     </Box>
 
-                    <Divider />
-                    
-                    <div className="lgreen col-sm-12 one-fourth">
+
+
+                    <div className="lgreen col-sm-12 one-fourth" id="aboutus">
+
                         <Container sx={{
                             display: "flex",
                             justifyContent: "center",
@@ -65,7 +72,9 @@ export default function Home() {
                         </Container>
                     </div>
 
-                    <div className="green col-sm-12 one-fourth">
+                    <div className="col-sm-12 one-fourth" id="contact">
+
+
                         <Container sx={{
                             display: "flex",
                             justifyContent: "center",
@@ -80,6 +89,64 @@ export default function Home() {
 
                 </div>
                 {/* Start footer */}
+
+
+
+                {/* <div class="formbold-main-wrapper">
+
+                    <div class="formbold-form-wrapper">
+                        <form action="https://formbold.com/s/FORM_ID" method="POST">
+                            <div class="formbold-mb-5">
+                                <label for="name" class="formbold-form-label"> Full Name </label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Full Name"
+                                    class="formbold-form-input"
+                                />
+                            </div>
+
+                            <div class="formbold-mb-5">
+                                <label for="email" class="formbold-form-label"> Email Address </label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Enter your email"
+                                    class="formbold-form-input"
+                                />
+                            </div>
+
+                            <div class="formbold-mb-5">
+                                <label for="subject" class="formbold-form-label"> Subject </label>
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    id="subject"
+                                    placeholder="Enter your subject"
+                                    class="formbold-form-input"
+                                />
+                            </div>
+
+                            <div class="formbold-mb-5">
+                                <label for="message" class="formbold-form-label"> Message </label>
+                                <textarea
+                                    rows="6"
+                                    name="message"
+                                    id="message"
+                                    placeholder="Type your message"
+                                    class="formbold-form-input"
+                                ></textarea>
+                            </div>
+
+                            <div>
+                                <button class="formbold-btn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div> */}
+
 
             </div>
             <Footer />
